@@ -96,4 +96,70 @@ class Home extends BaseController
     	$data = $gm->get_custom_query("select first_name from emp order by id desc",'array');    	
     	pre($data);    	
     }
+    public function test11()
+    {
+        $gm = new Global_Model();
+        $args = array(
+                'countOrResult' => "result",
+                'fields' => 'id,first_name,gender',
+                //'limit' => 5,
+                //'offset' => 4,
+                'sorting' => "id asc",
+                //'where' => "first_name = 'Dulce'",
+                'where' => ['id'=>1,'first_name'=>'Dulce'],
+                'showQuery' => true,
+                //'group_by' => 'Gender',
+                'sTable' => 'emp'
+            );
+        $data = $gm->getTablelist($args);
+        pre($data);
+    }
+    public function test12()
+    {
+        $gm = new Global_Model();
+        $args = array(
+                'countOrResult' => "result",
+                'fields' => 'u.id,u.full_name,l.city',
+                'limit' => 5,
+                'offset' => 4,
+                'sorting' => "u.id asc",
+                //'where' => "first_name = 'Dulce'",
+                'joinlist' => array(
+                                    array(
+                                        "table" => "location l",
+                                        "condition" => "u.loc_id = l.id",
+                                        "type" => "left"
+                                        )
+                                    ),
+                'showQuery' => true,
+                //'group_by' => 'Gender',
+                'sTable' => 'user u'
+            );
+        $data = $gm->getTablelist($args);
+        pre($data);
+    }
+    public function test13()
+    {
+        $gm = new Global_Model();
+        $args = array(
+                'countOrResult' => "row",
+                'fields' => 'u.id,u.full_name,l.city',
+                'limit' => 5,
+                'offset' => 4,
+                'sorting' => "u.id asc",
+                'where' => "full_name = 'Shrikant Waghare'",
+                'joinlist' => array(
+                                    array(
+                                        "table" => "location l",
+                                        "condition" => "u.loc_id = l.id",
+                                        "type" => "left"
+                                        )
+                                    ),
+                'showQuery' => true,
+                //'group_by' => 'Gender',
+                'sTable' => 'user u'
+            );
+        $data = $gm->getTablelist($args);
+        pre($data);
+    }
 }
