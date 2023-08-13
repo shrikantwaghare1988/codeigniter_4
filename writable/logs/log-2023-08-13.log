@@ -570,3 +570,221 @@ in APPPATH\Models\Global_Model.php on line 112.
  3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 14:53:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\Global_Model.php on line 183.
+ 1 APPPATH\Controllers\Save.php(36): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 14:56:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::trans_status()
+in APPPATH\Models\Global_Model.php on line 195.
+ 1 APPPATH\Controllers\Save.php(36): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 14:58:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert_id()
+in APPPATH\Models\Global_Model.php on line 196.
+ 1 APPPATH\Controllers\Save.php(37): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:03:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\Global_Model.php on line 172.
+ 1 APPPATH\Controllers\Save.php(61): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:07:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\Global_Model.php on line 174.
+ 1 APPPATH\Controllers\Save.php(61): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:12:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\Global_Model.php on line 176.
+ 1 APPPATH\Controllers\Save.php(61): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:13:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+in APPPATH\Models\Global_Model.php on line 185.
+ 1 APPPATH\Controllers\Save.php(61): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-13 15:13:31 --> mysqli_sql_exception: Unknown column 'emp' in 'field list' in C:\xampp\htdocs\codeigniter_4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter_4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `emp` SE...', 0)
+#1 C:\xampp\htdocs\codeigniter_4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `emp` SE...')
+#2 C:\xampp\htdocs\codeigniter_4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `emp` SE...')
+#3 C:\xampp\htdocs\codeigniter_4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `emp` SE...', Array, false)
+#4 C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php(185): CodeIgniter\Database\BaseBuilder->update('emp', Array)
+#5 C:\xampp\htdocs\codeigniter_4\app\Controllers\Save.php(61): App\Models\Global_Model->data_change(Array)
+#6 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(932): App\Controllers\Save->test2()
+#7 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+#8 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter_4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 15:13:31 --> Unknown column 'emp' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `emp` SET `emp` = \'\'
+WHERE `id` = 107
+AND `first_name` = \'Shrikant 107\'
+AND `last_name` = \'Waghare\'
+AND `gender` = \'Male\'
+AND `country` = \'India\'
+AND `age` = \'36\'
+AND `doj` = \'2023-08-10\'
+AND `created_date` = \'2023-08-13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `emp` SET `emp` = \'\'
+WHERE `id` = 107
+AND `first_name` = \'Shrikant 107\'
+AND `last_name` = \'Waghare\'
+AND `gender` = \'Male\'
+AND `country` = \'India\'
+AND `age` = \'36\'
+AND `doj` = \'2023-08-10\'
+AND `created_date` = \'2023-08-13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `emp` SET `emp` = \'\'
+WHERE `id` = 107
+AND `first_name` = \'Shrikant 107\'
+AND `last_name` = \'Waghare\'
+AND `gender` = \'Male\'
+AND `country` = \'India\'
+AND `age` = \'36\'
+AND `doj` = \'2023-08-10\'
+AND `created_date` = \'2023-08-13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `emp` SET `emp` = :emp:
+WHERE `id` = :id:
+AND `first_name` = :first_name:
+AND `last_name` = :last_name:
+AND `gender` = :gender:
+AND `country` = :country:
+AND `age` = :age:
+AND `doj` = :doj:
+AND `created_date` = :created_date:', [...], false)
+ 5 APPPATH\Models\Global_Model.php(185): CodeIgniter\Database\BaseBuilder->update('emp', [...])
+ 6 APPPATH\Controllers\Save.php(61): App\Models\Global_Model->data_change([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test2()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:14:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+in APPPATH\Models\Global_Model.php on line 193.
+ 1 APPPATH\Controllers\Save.php(62): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:15:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getLastQuery()
+in APPPATH\Models\Global_Model.php on line 194.
+ 1 APPPATH\Controllers\Save.php(62): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:15:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getLastQuery()
+in APPPATH\Models\Global_Model.php on line 194.
+ 1 APPPATH\Controllers\Save.php(62): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:24:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\Global_Model.php on line 180.
+ 1 APPPATH\Controllers\Save.php(87): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:26:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\Global_Model.php on line 178.
+ 1 APPPATH\Controllers\Save.php(112): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test4()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:30:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::delete()
+in APPPATH\Models\Global_Model.php on line 190.
+ 1 APPPATH\Controllers\Save.php(128): App\Models\Global_Model->data_change([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test5()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:31:10 --> CodeIgniter\Database\BaseBuilder::delete(): Argument #2 ($limit) must be of type ?int, array given, called in C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php on line 190
+in SYSTEMPATH\Database\BaseBuilder.php on line 2757.
+ 1 APPPATH\Models\Global_Model.php(190): CodeIgniter\Database\BaseBuilder->delete('emp', [...])
+ 2 APPPATH\Controllers\Save.php(128): App\Models\Global_Model->data_change([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test5()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:32:38 --> Undefined array key "tableData"
+in APPPATH\Models\Global_Model.php on line 161.
+ 1 APPPATH\Models\Global_Model.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tableData"', 'C:\\xampp\\htdocs\\codeigniter_4\\app\\Models\\Global_Model.php', 161)
+ 2 APPPATH\Controllers\Save.php(143): App\Models\Global_Model->data_change([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test6()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:56:09 --> syntax error, unexpected variable "$args"
+in APPPATH\Controllers\Save.php on line 180.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('Save/test8', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Save/test8')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('Save/test8')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 15:57:46 --> syntax error, unexpected variable "$args"
+in APPPATH\Controllers\Save.php on line 180.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('Save/test8', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Save/test8')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('Save/test8')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 16:00:01 --> Unclosed '{' on line 8
+in APPPATH\Models\Global_Model.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter_4\\app\\Models\\Global_Model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Global_Model')
+ 3 APPPATH\Controllers\Save.php(167): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Global_Model')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test8()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 16:01:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert_batch()
+in APPPATH\Models\Global_Model.php on line 215.
+ 1 APPPATH\Controllers\Save.php(185): App\Models\Global_Model->insert_batch([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test8()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 16:03:18 --> Undefined variable $table
+in APPPATH\Models\Global_Model.php on line 209.
+ 1 APPPATH\Models\Global_Model.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'C:\\xampp\\htdocs\\codeigniter_4\\app\\Models\\Global_Model.php', 209)
+ 2 APPPATH\Controllers\Save.php(185): App\Models\Global_Model->insert_batch([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test8()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 16:04:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insertBatch()
+in APPPATH\Models\Global_Model.php on line 211.
+ 1 APPPATH\Controllers\Save.php(185): App\Models\Global_Model->insert_batch([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test8()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 16:05:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::trans_status()
+in APPPATH\Models\Global_Model.php on line 215.
+ 1 APPPATH\Controllers\Save.php(185): App\Models\Global_Model->insert_batch([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Save->test8()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

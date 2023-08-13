@@ -149,5 +149,78 @@ class Global_Model extends Model
         elseif ($countOrResult === "array") {
             return $builder->getResult('array');
         }
+    } //----getTableList End here-----
+
+    function data_change($args)
+    {
+        $mode = $args['mode'];
+        $id = isset($args['id']) ? (strlen(trim($args['id'])) === 0 ? "" : $args['id']) : "";
+        $table = $args['table'];
+        $where = isset($args['where']) ? $args['where'] : "";
+        $sorting = isset($args['sorting']) ? $args['sorting'] : "";
+        $data = $args['tableData'];
+        $needID = isset($args['needID']) ? (strlen(trim($args['needID'])) === 0 ? "" : "yes") : "";        
+        $showQuery = isset($args['showQuery']) ? $args['showQuery'] : false;
+        
+       
+        if (strlen(trim($sorting)) > 0) {
+            $this->db->order_by($sorting);
+        }
+
+        $builder = $this->db->table($table);    
+
+        if ($mode === "Edit") 
+        {
+
+            if (is_array($where)) {
+                $builder->where($where);
+            } else if (strlen(trim($where)) > 0) {
+                $builder->where($where, NULL, false);
+            } else if (strlen(trim($id)) > 0) {
+                $builder->where('id', $id);
+            } else {
+                return 0;
+            }           
+
+            $builder->update($data);
+
+        } else if ($mode === "Add") { 
+            $builder->insert($data);
+        } else if ($mode === "Del") {
+            $builder->delete($data);
+        }
+        if ($showQuery) {           
+            echo $this->db->getLastQuery()->getQuery();
+        }       
+               
+        if ($mode === "Add" && strlen(trim($needID)) > 0) {
+            $return = $this->db->insertID();
+        } else {
+            $return = true;
+        }
+
+        return $return;
+        
+    } //----dataChange end here----
+
+    function insert_batch($args)
+    {
+       
+        $showQuery = isset($args['showQuery']) ? $args['showQuery'] : false;
+        $builder = $this->db->table($args['table']);
+        $builder->insertBatch($args['data']);
+        if ($showQuery) {           
+            echo $this->db->getLastQuery()->getQuery();
+        }
+
+        $errors = array_filter($this->db->error());
+
+        if (!empty($errors)) {
+            print_r($this->db->error());
+            return 0;
+        } else {
+            return true;
+        }
     }
+
 }	

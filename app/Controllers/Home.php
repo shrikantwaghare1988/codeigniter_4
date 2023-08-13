@@ -9,12 +9,9 @@ class Home extends BaseController
 	public $db ;
 
 	public function __construct()
-    {
-        
+    {        
         //$this->db  = \Config\Database::connect();
         $this->db = db_connect();
-        
-        
     }
     public function index(): string
     {
@@ -32,18 +29,13 @@ class Home extends BaseController
     }
     public function test3()
     {    	
-		$builder = $this->db->table('user_details');	
-		//$sql = $builder->getCompiledSelect();
-		//echo $sql;	
-		//$query   = $builder->get()->getResult();
+		$builder = $this->db->table('user_details');
 		$query   = $builder->get()->getResult('array');
-
 		pre($query);
     }
     public function test4()
     {
     	$id = 4;
-
     	$builder = $this->db->table('user_details')->select('first_name,last_name');
     	//$builder->select('first_name,last_name');
     	//$query = $builder->getWhere(['id' => $id], $limit, $offset);
@@ -124,13 +116,14 @@ class Home extends BaseController
                 'offset' => 4,
                 'sorting' => "u.id asc",
                 //'where' => "first_name = 'Dulce'",
-                'joinlist' => array(
-                                    array(
-                                        "table" => "location l",
-                                        "condition" => "u.loc_id = l.id",
-                                        "type" => "left"
-                                        )
-                                    ),
+                'joinlist' => 
+                array(
+                        array(
+                            "table" => "location l",
+                            "condition" => "u.loc_id = l.id",
+                            "type" => "left"
+                            )
+                ),
                 'showQuery' => true,
                 //'group_by' => 'Gender',
                 'sTable' => 'user u'
