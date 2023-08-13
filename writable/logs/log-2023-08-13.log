@@ -1,0 +1,155 @@
+CRITICAL - 2023-08-13 04:39:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Home.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test5()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 04:39:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Home.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test5()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:05:20 --> Undefined variable $gm
+in APPPATH\Controllers\Home.php on line 62.
+ 1 APPPATH\Controllers\Home.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gm', 'C:\\xampp\\htdocs\\codeigniter_4\\app\\Controllers\\Home.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test6()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:30:13 --> syntax error, unexpected variable "$result"
+in APPPATH\Models\Global_Model.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter_4\\app\\Models\\Global_Model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Global_Model')
+ 3 APPPATH\Controllers\Home.php(70): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Global_Model')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test7()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:30:35 --> syntax error, unexpected variable "$result"
+in APPPATH\Models\Global_Model.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter_4\\app\\Models\\Global_Model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Global_Model')
+ 3 APPPATH\Controllers\Home.php(70): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Global_Model')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test7()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:30:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Models\Global_Model.php on line 25.
+ 1 APPPATH\Controllers\Home.php(71): App\Models\Global_Model->get('emp', 5, 'array')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test7()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:31:06 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 1608.
+ 1 APPPATH\Models\Global_Model.php(25): CodeIgniter\Database\BaseBuilder->get('array')
+ 2 APPPATH\Controllers\Home.php(71): App\Models\Global_Model->get('emp', 5, 'array')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test7()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:31:56 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 1608.
+ 1 APPPATH\Models\Global_Model.php(25): CodeIgniter\Database\BaseBuilder->get('array')
+ 2 APPPATH\Controllers\Home.php(71): App\Models\Global_Model->get2('emp', 5, 'array')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test7()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:31:57 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 1608.
+ 1 APPPATH\Models\Global_Model.php(25): CodeIgniter\Database\BaseBuilder->get('array')
+ 2 APPPATH\Controllers\Home.php(71): App\Models\Global_Model->get2('emp', 5, 'array')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test7()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:31:57 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 1608.
+ 1 APPPATH\Models\Global_Model.php(25): CodeIgniter\Database\BaseBuilder->get('array')
+ 2 APPPATH\Controllers\Home.php(71): App\Models\Global_Model->get2('emp', 5, 'array')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test7()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 05:31:58 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 1608.
+ 1 APPPATH\Models\Global_Model.php(25): CodeIgniter\Database\BaseBuilder->get('array')
+ 2 APPPATH\Controllers\Home.php(71): App\Models\Global_Model->get2('emp', 5, 'array')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test7()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 06:05:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Global_Model.php on line 21.
+ 1 APPPATH\Controllers\Home.php(64): App\Models\Global_Model->get_all('emp', 'first_name', 'array')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test6()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-13 06:11:06 --> mysqli_sql_exception: Unknown column 'array' in 'order clause' in C:\xampp\htdocs\codeigniter_4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter_4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `first_n...', 0)
+#1 C:\xampp\htdocs\codeigniter_4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `first_n...')
+#2 C:\xampp\htdocs\codeigniter_4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `first_n...')
+#3 C:\xampp\htdocs\codeigniter_4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `first_n...', Array, false)
+#4 C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter_4\app\Controllers\Home.php(64): App\Models\Global_Model->get_all('emp', 'first_name,last...', 'array')
+#6 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(932): App\Controllers\Home->test6()
+#7 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter_4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 06:11:07 --> Unknown column 'array' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `first_name`, `last_name`
+FROM `emp`
+ORDER BY `array`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `first_name`, `last_name`
+FROM `emp`
+ORDER BY `array`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `first_name`, `last_name`
+FROM `emp`
+ORDER BY `array`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `first_name`, `last_name`
+FROM `emp`
+ORDER BY `array`', [], false)
+ 5 APPPATH\Models\Global_Model.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(64): App\Models\Global_Model->get_all('emp', 'first_name,last_name', 'array')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test6()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 06:11:35 --> syntax error, unexpected token ",", expecting ")"
+in APPPATH\Controllers\Home.php on line 64.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('Home/test6', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Home/test6')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('Home/test6')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-13 06:23:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'desc' at line 1 in C:\xampp\htdocs\codeigniter_4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter_4\system\Database\MySQLi\Connection.php(295): mysqli->query('select first_na...', 0)
+#1 C:\xampp\htdocs\codeigniter_4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select first_na...')
+#2 C:\xampp\htdocs\codeigniter_4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select first_na...')
+#3 C:\xampp\htdocs\codeigniter_4\app\Models\Global_Model.php(69): CodeIgniter\Database\BaseConnection->query('select first_na...')
+#4 C:\xampp\htdocs\codeigniter_4\app\Controllers\Home.php(96): App\Models\Global_Model->get_custom_query('select first_na...', 'array')
+#5 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(932): App\Controllers\Home->test10()
+#6 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\codeigniter_4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter_4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-13 06:23:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'desc' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('select first_name from emp order by desc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select first_name from emp order by desc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select first_name from emp order by desc')
+ 4 APPPATH\Models\Global_Model.php(69): CodeIgniter\Database\BaseConnection->query('select first_name from emp order by desc')
+ 5 APPPATH\Controllers\Home.php(96): App\Models\Global_Model->get_custom_query('select first_name from emp order by desc', 'array')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->test10()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
