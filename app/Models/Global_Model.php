@@ -84,8 +84,7 @@ class Global_Model extends Model
         $offset = isset($args['offset']) ? $args['offset'] : 0;
         $countOrResult = isset($args['countOrResult']) ? (strlen(trim($args['countOrResult'])) === 0 ? "result" : $args['countOrResult']) : "result";
 
-        $showQuery = isset($args['showQuery']) ? $args['showQuery'] : false;
-        $showError = isset($args['showError']) ? $args['showError'] : false;
+        $showQuery = isset($args['showQuery']) ? $args['showQuery'] : false;       
 
         $filter_where = isset($args['filter_where']) ? $args['filter_where'] : false;
         $filter_prefix = isset($args['filter_prefix']) ? $args['filter_prefix'] : '';
@@ -160,8 +159,7 @@ class Global_Model extends Model
         $sorting = isset($args['sorting']) ? $args['sorting'] : "";
         $data = $args['tableData'];
         $needID = isset($args['needID']) ? (strlen(trim($args['needID'])) === 0 ? "" : "yes") : "";        
-        $showQuery = isset($args['showQuery']) ? $args['showQuery'] : false;
-        
+        $showQuery = isset($args['showQuery']) ? $args['showQuery'] : false;        
        
         if (strlen(trim($sorting)) > 0) {
             $this->db->order_by($sorting);
@@ -204,8 +202,7 @@ class Global_Model extends Model
     } //----dataChange end here----
 
     function insert_batch($args)
-    {
-       
+    {       
         $showQuery = isset($args['showQuery']) ? $args['showQuery'] : false;
         $builder = $this->db->table($args['table']);
         $builder->insertBatch($args['data']);
